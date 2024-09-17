@@ -20,8 +20,7 @@ class TestQue(unittest.TestCase):
         "キューに要素を追加する"
         q = Que([1, 2, 3])
         new_q: Que = q.add(4)
-        new_list = new_q.get()
-        self.assertEqual(new_list, [1, 2, 3, 4])
+        self.assertEqual(new_q.get(), [1, 2, 3, 4])
 
     def test_pop(self):
         "キューの先頭を削除する"
